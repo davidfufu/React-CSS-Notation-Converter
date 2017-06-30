@@ -6,3 +6,8 @@ This is a small plugin for Sublime Text 3 that converts CSS notation to and from
 3. Highlight CSS and right click the selection. Select context menu item. I named mine React CSS because I mainly use this for React work. 
 
 All context menu options can be rename with the Context.sublime-menu file.
+
+For Futher Reference Please refer to the MDN link:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference
+
+![Menu](http://imgur.com/H6h1GKf)
+![Convert](http://imgur.com/VfiYZph)
