@@ -15,8 +15,6 @@ class cssCommand(sublime_plugin.TextCommand): #create Webify Text Command
 				s = self.view.substr(region)  #assign s variable the selected region
 				print(s)
 				print(type(s))
-				# news = re.sub("px","",s)
-				# news = re.sub(";","",news)
 				news = re.sub('(\w+)((-)(?P<capLet>\S){1}(?P<restWord>\w+))?: ',finalizeCapital,s)
 				#handle numbers
 				news = re.sub('(\d*)(px);', "\""+r"\1"+"\",",news)
