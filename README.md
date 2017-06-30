@@ -7,7 +7,7 @@ This is a small plugin for Sublime Text 3 that converts CSS notation to and from
 
 All context menu options can be rename with the Context.sublime-menu file.
 
-For Futher Reference Please refer to the MDN link:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference
+For futher reference, please refer to the MDN link:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference
 
 ![Menu](http://i.imgur.com/H6h1GKf.gif)
 ![Convert](http://i.imgur.com/VfiYZph.gif)
