@@ -9,5 +9,5 @@ All context menu options can be rename with the Context.sublime-menu file.
 
 For Futher Reference Please refer to the MDN link:https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference
 
-![Menu](http://imgur.com/H6h1GKf)
-![Convert](http://imgur.com/VfiYZph)
+![Menu](http://i.imgur.com/H6h1GKf.gif)
+![Convert](http://i.imgur.com/VfiYZph.gif)
