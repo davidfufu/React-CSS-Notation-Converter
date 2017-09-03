@@ -47,7 +47,7 @@ class unreactcssCommand(sublime_plugin.TextCommand): #create Webify Text Command
 	def run(self, edit):   #implement run method
 		for region in self.view.sel():  #get user selection
 				s = self.view.substr(region)  #assign s variable the selected region
-				news = re.sub('([a-z]+)(([A-Z])([a-z]+)?)?:(\s)*("(.+)")?,',reverseCapital,s)
+				news = re.sub('([a-z]+)(([A-Z])([a-z]+)?)?:(\s)*(["\'](.+)["\'])?,',reverseCapital,s)
 
 				self.view.replace(edit, region, news) #replace # print ("news = s.replace(case[0], case[1])")
 
