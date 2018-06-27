@@ -32,11 +32,16 @@ def reverseCapital(match):
 	capLetter = match.group(3)
 	restOfWrd = match.group(4)
 	allothervalues = match.group(7)
+	settings = sublime.load_settings('react_css.sublime-settings')
+	colon = settings.get('colon')
+	semicolon = settings.get('semicolon')
 
 	if scndWord:
 		initial = fstWord + "-" + capLetter.lower() + restOfWrd
 		print('match two words')
-		return initial+": " + allothervalues +";"
+		pcolon = ': ' if colon else ' '
+		psemicolon = ';' if semicolon else ''
+		return initial + pcolon + allothervalues + psemicolon
 			
 	else:
 		initial = fstWord
@@ -47,7 +52,7 @@ class unreactcssCommand(sublime_plugin.TextCommand): #create Webify Text Command
 	def run(self, edit):   #implement run method
 		for region in self.view.sel():  #get user selection
 				s = self.view.substr(region)  #assign s variable the selected region
-				news = re.sub('([a-z]+)(([A-Z])([a-z]+)?)?:(\s)*(["\'](.+)["\'])?,',reverseCapital,s)
+				news = re.sub('([a-z]+)(([A-Z])([a-z]+)?)?:(\s)*(["\'](.+)["\'])?,?',reverseCapital,s.replace(',', '\n'))
 
 				self.view.replace(edit, region, news) #replace # print ("news = s.replace(case[0], case[1])")
 
