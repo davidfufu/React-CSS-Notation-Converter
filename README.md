@@ -1,4 +1,6 @@
 # REACT-CSS-Notation-Converter
+
+## Disclaimer: I've switched over to Visual Studio Code, so I will no longer be supporting this extension. Feel free to fork it. 
 This is a small plugin for Sublime Text 3 that converts CSS notation to and from its normal syntax to the DOM style notation that is used by React and JSS . I made this to speed up React development due to the fact that CSS style objects can be created and stored within React components, but rewriting the CSS into React friendly, DOM notation was a hassle.
 
 1. Open package control with CTRL + SHIFT + P and go to "Install Package"
