@@ -1,4 +1,4 @@
 {
-	"colon": false,
-	"semicolon": false,
+	"colon": true,
+	"semicolon": true,
 }
