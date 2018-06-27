@@ -32,11 +32,16 @@ def reverseCapital(match):
 	capLetter = match.group(3)
 	restOfWrd = match.group(4)
 	allothervalues = match.group(7)
+	settings = sublime.load_settings('react_css.sublime-settings')
+	colon = settings.get('colon')
+	semicolon = settings.get('semicolon')
 
 	if scndWord:
 		initial = fstWord + "-" + capLetter.lower() + restOfWrd
 		print('match two words')
-		return initial+": " + allothervalues +";"
+		pcolon = ': ' if colon else ' '
+		psemicolon = ';' if semicolon else ''
+		return initial + pcolon + allothervalues + psemicolon
 			
 	else:
 		initial = fstWord
