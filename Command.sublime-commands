@@ -1,0 +1,14 @@
+[
+	{
+		"caption": "To React CSS",
+		"command": "reactcss"
+	},
+	{
+		"caption": "To Standard CSS",
+		"command": "unreactcss"
+	},
+	{
+		"caption": "killquotes",
+		"command": "freeuse"
+	}
+]
